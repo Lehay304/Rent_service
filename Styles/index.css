@@ -51,7 +51,7 @@ body {
     width: 100%;
     background: 
     linear-gradient(rgba(123, 155, 213, 0.42), rgba(123, 155, 213, 0.42)), 
-    url('Photo/firefox_Xvx2efaAmi.jpg') center/cover no-repeat; 
+    url('/Photo/firefox_Xvx2efaAmi.jpg') center/cover no-repeat; 
 }
 .trust-section-text{
     padding: 130px;
@@ -123,6 +123,9 @@ body {
     width: 32%;
     height: 70px;
 }
+.model-filter select{
+    width: 70%;
+}
 
 .news-section{
     display: flex;
@@ -141,5 +144,6 @@ body {
 .news-block{
     width: 100%;
     border: 2px solid black;
-    float: ;
+   
+    border-radius: 10px;
 }
