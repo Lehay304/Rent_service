@@ -1,0 +1,467 @@
+/* ЧАСТЬ КОТОРАЯ ИДЁТ ВО ВСЕХ CSS ФАЙЛАХ */
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin: 10px 0px 0 0px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #5080D7;
+}
+.head a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+.small-border{
+    display: inline-block;
+    position: relative;
+}
+.small-border::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #5080D7;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+.small-border:hover:after{
+    width: 100%;
+}
+
+.basement{
+    display: flex;
+    background-color: #5080D7;
+    height: fit-content;
+    padding:  10px 10px 10px 10px;
+}
+.basement-info{
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    text-align: center;
+}
+.basement-navigation{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+}
+
+.basement-navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* INDEX */
+
+
+
+
+.trust-section {
+    margin: 40px 0 40px 0;
+    height: fit-content;
+    width: 100%;
+    background: 
+    linear-gradient(rgba(123, 155, 213, 0.42), rgba(123, 155, 213, 0.42)), 
+    url('/Photo/firefox_Xvx2efaAmi.jpg') center/cover no-repeat; 
+}
+.trust-section-text{
+    padding: 130px;
+    color: white;
+}
+
+.search{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 0 40px 0;
+}
+.search-filters{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 120px;
+    background-color: #5080D7;
+    border-radius: 10px;
+}
+.class-filter{
+    width: 32%;
+    padding: 0 0 0 10px;
+}
+
+.search-button{
+    display: flex;
+    width: 12%;
+    
+}
+.search-button-img{
+    width: 50px;
+}
+.search-button button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    font-size: 20px;
+    background-color: #5080D7;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    gap: 5px;
+    transition: 0.3s;
+}
+.search-button button:hover{
+    font-size: 23px;
+}
+
+.make-filter{
+    padding: 0 10px 0 10px;
+    width: 32%;
+    height: 70px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.make-filter select{
+    width: 70%;
+}
+
+.model-filter{
+    padding: 0 0 0 10px;
+    width: 32%;
+    height: 70px;
+}
+.model-filter select{
+    width: 70%;
+}
+
+.news-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+.news-blocks{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    width: 74%;
+    gap: 20px;
+    
+}
+.news-block{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+/* LOGIN */
+
+
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 68.3vh;
+}
+
+.login-form{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 15px;
+    border: 3px solid #5080D7;
+    border-radius: 10px;
+    width: 320px;
+}
+.login-form input{
+    border: 2px solid #5080D7;
+    border-radius: 5px;
+}
+
+.login-button{
+    display: grid;
+    justify-content: center;
+    row-gap: 15px;
+}
+.login-button button{
+    width: 110px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    background-color: #5080D7;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.login-button button:hover{
+    background-color: #4872c0;
+}
+.login-button a{
+    text-decoration: none;
+    color: #5080D7;
+}
+.login-button a:hover{
+    color: #4872c0;
+}
+
+
+
+
+/* REGISTRATION */
+
+
+
+
+.reg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 68.3vh;
+}
+
+.reg-form{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 15px;
+    border: 3px solid #5080D7;
+    border-radius: 10px;
+    width: fit-content;
+}
+.reg-form input{
+    border: 2px solid #5080D7;
+    border-radius: 5px;
+}
+.reg-inputs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.reg-inputs p{
+    margin: 5px 0 10px 0;
+}
+
+
+.reg-button{
+    display: grid;
+    justify-content: center;
+    row-gap: 15px;
+    margin: 20px 0 0 0;
+    
+}
+.reg-button button{
+    width: 144px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    background-color: #5080D7;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.reg-button button:hover{
+    background-color: #4872c0;
+}
+.reg-button a{
+    text-decoration: none;
+    color: #5080D7;
+}
+.reg-button a:hover{
+    color: #4872c0;
+}
+
+
+
+
+/* RENT */
+
+
+
+
+.promo-section{
+    text-align: center;
+}
+
+.rent-forms{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18% 0 18%;
+    gap: 20px;
+}
+
+.auto-form{
+    width: 420px;
+    height: fit-content;
+}
+.auto-form p{
+    margin: 15px 0 5px 0;
+}
+.auto-form a{
+    text-decoration: none;
+    color: #5080D7;
+
+}
+.client-form{
+    width: 388px;
+    height: fit-content;
+    border: 1px solid #5080D7;
+    border-radius: 10px;
+    padding: 10px 10px 20px 20px;
+}
+.client-form p{
+    margin: 15px 0 5px 0;
+}
+.rent-forms input{
+    border: 2px solid #5080D7;
+    border-radius: 5px;
+}
+
+.rent-buttons{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 0 0;
+    gap: 15px;
+}
+
+.rent-apply{
+    background-color: #5080D7;
+    border: none; 
+    border-radius: 15px; 
+    color: white;
+    font-size: 18px;
+    width: 120px;
+    height: 45px;
+}
+.rent-change{
+    background-color: white;
+    border: 1px solid #5080D7;
+    border-radius: 15px; 
+    color: #5080D7;
+    font-size: 18px;
+    width: 120px;
+    height: 45px;
+}
+
+.final-info{
+    display: grid;
+    margin: 0 0 40px 18%;
+}
+.final-info button{
+    background-color: #5080D7;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    width: 140px;
+    height: 50px;
+
+}
+
+
+
+
+/* PROFILE */
+
+
+
+
+.profile-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 18% 0 18%;
+    gap: 20px;
+}
+
+.client-img{
+    border: 1px solid #5080D7;
+    width: 250px;
+    height: 330px;
+    
+}
+
+.client-info{
+    border: 1px solid #5080D7;
+    width: 250px;
+    height: 330px;
+    padding: 15px 20px 15px 20px;
+}
+.client-info button{
+    border: none;
+    border-radius: 10px;
+    background-color: #5080D7;
+    color: white;
+    font-size: 16px;
+    width: 130px;
+    height: 50px;
+}
+.logout-button{
+    margin: 20px 0 20px 0; 
+    border: 1px solid #5080D7; 
+    border-radius: 10px;
+    color: #5080D7;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+}
+
+.active-rent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+.active-rent-section{
+    width: 80%;
+    height: fit-content;
+    border: 1px solid #5080D7;
+    margin-bottom: 20px;
+}
+.active-rent-div{
+    margin: 10px 10px 10px 10px;
+    padding: 0 15px 0 15px;
+    border: 1px solid #5080D7;
+    width: 30%;
+    height: fit-content;
+}
