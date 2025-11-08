@@ -29,10 +29,33 @@
         </div>
 
         <div class="modalwin" id="modalwin">
-            <div class="modal">
-                <button class="close-btn" id="closebtn">X</button>
-                <h1>ПИВЕТ</h1>
-            </div>
+            <form class="modal">
+                <div class="modal-head">
+                    <p>Добавить Банковскую карту</p>
+                    <button class="close-btn" id="closebtn">X</button>
+                </div>
+                <div class="modal-form">
+                    <div class="modal-input">
+                        <p>Номер карты</p>
+                        <input type="text">
+                    </div>
+                    <div class="modal-input">
+                        <p>Дата окончания</p>
+                        <input type="text">
+                    </div>
+                    <div class="modal-input">
+                        <p>CVV/CVC</p>
+                        <input type="text">
+                    </div>
+                    <div class="modal-input">
+                        <p>Имя фамилия</p>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button>Добавить</button>
+                </div>
+            </form>
         </div>
 
         <div class="cards-section">
@@ -65,7 +88,7 @@
                         </div>
                     </div>
                 </div>                   
-                    <button class="openbtn">Добавить карту</button>
+                    <button class="openbtn">Добавить ещё одну карту</button>
                 </div>
             </div>
         </div>

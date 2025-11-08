@@ -1,11 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const openbtn = document.querySelector('.openbtn');
-    const modalwin = document.getElementById('modalwin');
-    const closebtn = document.getElementById('closebtn');
-    
-    openbtn.addEventListener('click', () => {
-        modalwin.classList.add (show);});
-    
-    closebtn.addEventListener('click', () => {
-        modalwin.classList.remove = 'none';});
+  const openbtn = document.querySelector('.openbtn');
+  const modalwin = document.getElementById('modalwin');
+  const closebtn = document.getElementById('closebtn');
+
+  openbtn.addEventListener('click', () => {
+    modalwin.classList.add('show');
+  });
+
+  closebtn.addEventListener('click', () => {
+    modalwin.classList.remove('show');
+  });
+
+  modalwin.addEventListener('click', e => {
+    if (e.target === modalwin) modalwin.classList.remove('show');
+  });
 });
