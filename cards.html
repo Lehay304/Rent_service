@@ -10,118 +10,115 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <main class="main">
-        <header class="head">
-            <div>
-                <p style="color: #5080D7; margin: 0; font-size: 30px;">Index</p>
-                <p style="margin: 0; font-size: 30px;">Drive</p>
+    <header class="head">
+        <div>
+            <p style="color: #5080D7; margin: 0; font-size: 30px;">Index</p>
+            <p style="margin: 0; font-size: 30px;">Drive</p>
+        </div>
+        <nav class="head-links">
+            <a class="small-border" href="profile.html">Личный кабинет</a>
+            <a class="small-border" href="rent.html">Бронирование</a>
+            <a class="small-border" href="branches.html">Филиалы</a>
+        </nav>
+    </header>
+
+    <div class="cards-title">
+        <p>Банковские карты</p>
+    </div>
+
+    <div class="modalwin" id="modalwin">
+        <form class="modal">
+            <div class="modal-head">
+                <p>Добавить Банковскую карту</p>
+                <button class="close-btn" id="closebtn">X</button>
             </div>
-            <nav class="head-links">
-                <a class="small-border" href="profile.html">Личный кабинет</a>
-                <a class="small-border" href="rent.html">Бронирование</a>
-                <a class="small-border" href="branches.html">Филиалы</a>
-            </nav>
-        </header>
-
-        <div class="cards-title">
-            <p>Банковские карты</p>
-        </div>
-
-        <div class="modalwin" id="modalwin">
-            <form class="modal">
-                <div class="modal-head">
-                    <p>Добавить Банковскую карту</p>
-                    <button class="close-btn" id="closebtn">X</button>
+            <div class="modal-form">
+                <div class="modal-input">
+                    <p>Номер карты</p>
+                    <input type="text">
                 </div>
-                <div class="modal-form">
-                    <div class="modal-input">
-                        <p>Номер карты</p>
-                        <input type="text">
-                    </div>
-                    <div class="modal-input">
-                        <p>Дата окончания</p>
-                        <input type="text">
-                    </div>
-                    <div class="modal-input">
-                        <p>CVV/CVC</p>
-                        <input type="text">
-                    </div>
-                    <div class="modal-input">
-                        <p>Имя фамилия</p>
-                        <input type="text">
-                    </div>
+                <div class="modal-input">
+                    <p>Дата окончания</p>
+                    <input type="text">
                 </div>
-                <div class="modal-footer">
-                    <button>Добавить</button>
+                <div class="modal-input">
+                    <p>CVV/CVC</p>
+                    <input type="text">
                 </div>
-            </form>
-        </div>
-
-        <div class="cards-section">
-            <div class="cards">
-                <div class="card">
-                    <div style="display: flex; text-align: center; align-items: center;">
-                        <img src="/Photo/mastercard.png" alt="MasterCard">
-                        <p>**** **** **** 1234</p>
-                    </div>
-                    <div style="display: grid; grid-template-columns: repeat(1, 1fr); padding: 15px;">
-                        <div>
-                            <p style="color: green;">Активна</p>
-                        </div>
-                        <div style="display: flex; justify-content: end; align-items: end;">
-                            <button>Закрыть</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div style="display: flex; text-align: center; align-items: center;">
-                        <img src="/Photo/mastercard.png" alt="MasterCard">
-                        <p>**** **** **** 1234</p>
-                    </div>
-                    <div style="display: grid; grid-template-columns: repeat(1, 1fr); padding: 15px; ">
-                        <div>
-                            <p style="color: red;">Закончился срок обслуживания</p>
-                        </div>
-                        <div style="display: flex; justify-content: end; align-items: end;">
-                            <button>Закрыть</button>
-                        </div>
-                    </div>
-                </div>                   
-                    <button class="openbtn">Добавить ещё одну карту</button>
+                <div class="modal-input">
+                    <p>Имя фамилия</p>
+                    <input type="text">
                 </div>
             </div>
-        </div>
+            <div class="modal-footer">
+                <button>Добавить</button>
+            </div>
+        </form>
+    </div>
 
-        <footer class="basement">
-            <div class="basement-info">
-                <div>
-                    <p>Телефон</p>
-                    <p>8 (800) 555-35-35</p>
+    <main class="cards-section">
+        <div class="cards">
+            <div class="card">
+                <div style="display: flex; text-align: center; align-items: center;">
+                    <img src="/Photo/mastercard.png" alt="MasterCard">
+                    <p>**** **** **** 1234</p>
                 </div>
-                <div>
-                    <p>E-mail</p>
-                    <p>IndexDrive@gmail.com</p>
+                <div style="display: grid; grid-template-columns: repeat(1, 1fr); padding: 15px;">
+                    <div>
+                        <p style="color: green;">Активна</p>
+                    </div>
+                    <div style="display: flex; justify-content: end; align-items: end;">
+                        <button>Закрыть</button>
+                    </div>
                 </div>
             </div>
-
-            <nav class="basement-navigation">
-                <div style="display: grid; justify-content: center; width: 51%; row-gap: 5px;">
-                    <a href="login.html">Вход</a>
-                    <a href="registration.html">Регистрация</a>
+            <div class="card">
+                <div style="display: flex; text-align: center; align-items: center;">
+                    <img src="/Photo/mastercard.png" alt="MasterCard">
+                    <p>**** **** **** 1234</p>
                 </div>
-                <div style="display: grid; width: 49%; row-gap: 5px;">
-                    <a href="index.html">Главная</a>
-                    <a href="profile.html">Личный кабинет</a>
-                    <a href="catalog.html">Каталог</a>
-                    <a href="rent.html">Бронирование</a>
-                    <a href="branches.html">Филиалы</a>
-                    <a href="rent-history.html">История бронирования</a>
-                    <a href="cards.html">Банковские карты</a>
+                <div style="display: grid; grid-template-columns: repeat(1, 1fr); padding: 15px; ">
+                    <div>
+                        <p style="color: red;">Закончился срок обслуживания</p>
+                    </div>
+                    <div style="display: flex; justify-content: end; align-items: end;">
+                        <button>Закрыть</button>
+                    </div>
                 </div>
-            </nav>
-        </footer>
+            </div>                   
+                <button class="openbtn">Добавить ещё одну карту</button>
+            </div>
+        </div>
     </main>
+
+    <footer class="basement">
+        <div class="basement-info">
+            <div>
+                <p>Телефон</p>
+                <p>8 (800) 555-35-35</p>
+            </div>
+            <div>
+                <p>E-mail</p>
+                <p>IndexDrive@gmail.com</p>
+            </div>
+        </div>
+
+        <nav class="basement-navigation">
+            <div style="display: grid; justify-content: center; width: 51%; row-gap: 5px;">
+                <a href="login.html">Вход</a>
+                <a href="registration.html">Регистрация</a>
+            </div>
+               <div style="display: grid; width: 49%; row-gap: 5px;">
+                <a href="index.html">Главная</a>
+                <a href="profile.html">Личный кабинет</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="rent.html">Бронирование</a>
+                <a href="branches.html">Филиалы</a>
+                <a href="rent-history.html">История бронирования</a>
+                <a href="cards.html">Банковские карты</a>
+            </div>
+        </nav>
+    </footer>
     <script src="modalwin.js"></script>
 </body>
 </html>

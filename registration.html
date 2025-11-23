@@ -10,101 +10,99 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main">
-        <div class="head">
+    <header class="head">
+        <div>
+            <p style="color: #5080D7; margin: 0; font-size: 30px;">Index</p>
+            <p style="margin: 0; font-size: 30px;">Drive</p>
+        </div>
+        <div class="head-links">
+            <a class="small-border" href="profile.html">Личный кабинет</a>
+            <a class="small-border" href="rent.html">Бронирование</a>
+            <a class="small-border" href="branches.html">Филиалы</a>
+        </div>
+    </header>
+
+    <main class="reg">
+        <form class="reg-form" action="">
+            <h1 style="margin: 0 0 10px 0; text-align: center; color: #5080D7;">Регистрация</h1>
+            <div class="reg-inputs">
+                <div>
+                    <div>
+                        <p>Фамилия</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Имя</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Отчество</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Пароль</p>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <p>Повтор пароля</p>
+                        <input type="password">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Серия паспорта</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Номер паспорта</p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p>Телефон</p>
+                        <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>Дата рождения</p>
+                        <input type="date" style="width: 156px; height: 16px;">
+                    </div>
+                </div>
+            </div>
+            <div class="reg-button">
+                <button>Регистрация</button>
+                <a href="login.html">Уже есть аккаунт?</a>
+            </div>
+        </form>
+    </main>
+
+    <footer class="basement">
+        <div class="basement-info">
             <div>
-                <p style="color: #5080D7; margin: 0; font-size: 30px;">Index</p>
-                <p style="margin: 0; font-size: 30px;">Drive</p>
+                <p>Телефон</p>
+                <p>8 (800) 555-35-35</p>
             </div>
-            <div class="head-links">
-                <a class="small-border" href="profile.html">Личный кабинет</a>
-                <a class="small-border" href="rent.html">Бронирование</a>
-                <a class="small-border" href="branches.html">Филиалы</a>
+            <div>
+                <p>E-mail</p>
+                <p>IndexDrive@gmail.com</p>
             </div>
         </div>
 
-        <div class="reg">
-            <form class="reg-form" action="">
-                <h1 style="margin: 0 0 10px 0; text-align: center; color: #5080D7;">Регистрация</h1>
-                <div class="reg-inputs">
-                    <div>
-                        <div>
-                            <p>Фамилия</p>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <p>Имя</p>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <p>Отчество</p>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <p>Пароль</p>
-                            <input type="password">
-                        </div>
-                        <div>
-                            <p>Повтор пароля</p>
-                            <input type="password">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>Серия паспорта</p>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <p>Номер паспорта</p>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <p>Телефон</p>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>Дата рождения</p>
-                            <input type="date" style="width: 156px; height: 16px;">
-                        </div>
-                    </div>
-                </div>
-                <div class="reg-button">
-                    <button>Регистрация</button>
-                    <a href="login.html">Уже есть аккаунт?</a>
-                </div>
-            </form>
-        </div>
-
-        <div class="basement">
-            <div class="basement-info">
-                <div>
-                    <p>Телефон</p>
-                    <p>8 (800) 555-35-35</p>
-                </div>
-                <div>
-                    <p>E-mail</p>
-                    <p>IndexDrive@gmail.com</p>
-                </div>
+        <div class="basement-navigation">
+            <div style="display: grid; justify-content: center; width: 51%; row-gap: 5px;">
+                <a href="login.html">Вход</a>
+                <a href="registration.html">Регистрация</a>
             </div>
-
-            <div class="basement-navigation">
-                <div style="display: grid; justify-content: center; width: 51%; row-gap: 5px;">
-                    <a href="login.html">Вход</a>
-                    <a href="registration.html">Регистрация</a>
-                </div>
-                <div style="display: grid; width: 49%; row-gap: 5px;">
-                    <a href="index.html">Главная</a>
-                    <a href="profile.html">Личный кабинет</a>
-                    <a href="catalog.html">Каталог</a>
-                    <a href="rent.html">Бронирование</a>
-                    <a href="branches.html">Филиалы</a>
-                    <a href="rent-history.html">История бронирования</a>
-                    <a href="cards.html">Банковские карты</a>
-                </div>
+            <div style="display: grid; width: 49%; row-gap: 5px;">
+                <a href="index.html">Главная</a>
+                <a href="profile.html">Личный кабинет</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="rent.html">Бронирование</a>
+                <a href="branches.html">Филиалы</a>
+                <a href="rent-history.html">История бронирования</a>
+                <a href="cards.html">Банковские карты</a>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

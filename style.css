@@ -6,6 +6,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 .head {
@@ -625,8 +628,157 @@ body {
 
 
 
-.rent-history{
+.reserv-history{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.reserv-history-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #5080D7;
+    font-size: 18px;
+}
+
+.reserv-history-title p{
+    width: 80%;
+    color: #5080D7;
+    font-size: 18px;
+}
+.reserv-history-sections{
+    display: grid;
     width: 80%;
     height: fit-content;
+    border: 1px solid #5080D7;
+    border-radius: 5px;
+    padding: 5px;
+    row-gap: 5px;
+}
+
+.reserv-history-section{
+    display: flex;
+    border: 1px solid #5080D7;
+    border-radius: 5px;
+}
+
+.reserv-history-info{
+    padding: 5px 0 5px 5px;
+    width: 80%;
+    margin: 0;
+}
+.reserv-history-info p{
+    margin: 0;
+}
+#info1{
+    border-bottom: 1px solid #5080D7;
+}
+#info2{
+    border-top: 1px solid #5080D7;
+}
+
+.reserv-history-section button{
+    width: 20%;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #5080D7;
+    color: #5080D7;
+}
+
+
+.rent-history{
+    width: 100%;
+    height: fit-content;
+    display: flex;
     justify-content: center;
+}
+
+.rent-history-sections{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: fit-content;
+    border: 1px solid #5080D7;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.rent-history-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #5080D7;
+    font-size: 18px;
+}
+.rent-history-title p{
+    width: 80%;
+    color: #5080D7;
+    font-size: 18px;
+}
+
+.rent-history-section{
+    width: 280px;
+    border: 1px solid #5080D7;
+
+}
+.rent-history-info p{
+    margin: 8px;
+}
+.rent-history-section button{
+    margin: 8px;
+    width: fit-content;
+    height: fit-content;
+    padding: ;
+}
+
+
+
+
+/* ДЛЯ КАТАЛОГА */
+
+
+
+
+.catalog{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.catalog-sections{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.catalog-section{
+    width: 280px;
+    border: 1px solid #5080D7;
+    border-radius: 10px;
+}
+.catalog-info img{
+    width: 100%;
+    border-radius: 10px;
+}
+.catalog-conf-btn{
+    display: flex;
+}
+.catalog-conf-btn button{
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+}
+.catalog-conf-btn p{
+    display: flex;
+    width: 40%;
+    font-size: 10px;
+    color: grey;
 }
