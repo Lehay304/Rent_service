@@ -732,7 +732,6 @@ body {
     margin: 8px;
     width: fit-content;
     height: fit-content;
-    padding: ;
 }
 
 
@@ -781,4 +780,113 @@ body {
     width: 40%;
     font-size: 10px;
     color: grey;
+}
+
+
+
+
+/* ДЛЯ ФИЛИАЛОВ  */
+
+
+
+
+.branches-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #5080D7;
+    font-size: 18px;
+}
+
+.branches{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+.branches-sections{
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: repeat(2, 1fr); */
+    flex-wrap: wrap;
+    width: fit-content;
+}
+.branches-map{
+    width: 460px;
+    display: grid;
+}
+.branches-branches{
+    display: grid;
+    width: 460px;
+    row-gap: 10px;
+}
+
+.branches-cars{
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.branches-cars-title{
+    padding: 20px;
+    background: #5080D7;
+    color: white;
+}
+.branches-cars-title h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.branches-cars-title p {
+    margin: 8px 0 0;
+    opacity: 0.9;
+    font-size: 14px;
+}
+.car-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background: #f9f9f9;
+}
+.car-list.active{
+    max-height: 1000px;
+    padding: 20px;
+}
+.car-item{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.car-item.last-child{
+    border-bottom: none;
+}
+/* .car-item img{
+
+} */
+.car-info h3{
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+.car-info p{
+    margin: 4px 0;
+    color: #555;
+    font-size: 14px;
+}
+.price{
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #27ae60
+}
+.arrow{
+    float: right;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+.branches-cars-title.active .arrow{
+    transform: rotate(180deg);
 }
